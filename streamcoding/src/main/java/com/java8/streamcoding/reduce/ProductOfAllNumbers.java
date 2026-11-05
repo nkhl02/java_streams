@@ -1,4 +1,4 @@
-package com.java8.streamcoding;
+package com.java8.streamcoding.reduce;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,5 +11,10 @@ public class ProductOfAllNumbers {
     public void productOfAllNumbers(){
         list.stream().forEach(a-> result=a*result);
         System.out.println(result);
+    }
+
+    public void productOfAllNumbers2(){
+        System.out.println(list.stream()
+                .reduce(1,(a,b)->a*b));
     }
 }
