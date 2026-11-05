@@ -1,10 +1,20 @@
 package com.java8.streamcoding;
 
+import com.java8.streamcoding.allmatch.CheckIfAllNumbersArePositive;
+import com.java8.streamcoding.anymatch.AnyNumberIsDivisibleByThree;
+import com.java8.streamcoding.distinct.FindAllTheDisctinctElements;
+import com.java8.streamcoding.flatmap.FlatenListOfList;
+import com.java8.streamcoding.primitivemathoperations.FindAverageOfNumbers;
 import com.java8.streamcoding.reduce.FindMaxNumberReduce;
 import com.java8.streamcoding.reduce.ProductOfAllNumbers;
 import com.java8.streamcoding.reduce.SumOfEvenNumbers;
 import com.java8.streamcoding.reduce.SumOfSquareOfEvenNumbers;
 import com.java8.streamcoding.sorted.FindMaxNumber;
+import com.java8.streamcoding.sorted.SortInAscendingOrder;
+import com.java8.streamcoding.sorted.SortInDescendingOrder;
+import com.java8.streamcoding.string.CountHowManyStringsStartsWith;
+import com.java8.streamcoding.string.FindFirstNonEmptyElement;
+import com.java8.streamcoding.string.JoinAllStringIntoCommaSeperatedString;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -50,6 +60,40 @@ public class StreamcodingApplication {
 
         SumOfSquareOfEvenNumbers sumOfSquareOfEvenNumbers = new SumOfSquareOfEvenNumbers();
         sumOfSquareOfEvenNumbers.sumOfSquareOfEvenNumbers();
+
+        FindAllTheDisctinctElements findAllTheDisctinctElements = new FindAllTheDisctinctElements();
+        findAllTheDisctinctElements.findDistinctUsingSet();
+        findAllTheDisctinctElements.findDistinct();
+
+        FindAverageOfNumbers findAverageOfNumbers = new FindAverageOfNumbers();
+        findAverageOfNumbers.findAverageOfNumbers();
+
+        SortInAscendingOrder sortInAscendingOrder = new SortInAscendingOrder();
+        sortInAscendingOrder.sortAscending();
+
+        SortInDescendingOrder sortInDescendingOrder = new SortInDescendingOrder();
+        sortInDescendingOrder.sortDescending();
+
+        CountHowManyStringsStartsWith countHowManyStringsStartsWith = new CountHowManyStringsStartsWith();
+        countHowManyStringsStartsWith.countStringsStartingWith();
+
+        JoinAllStringIntoCommaSeperatedString joinAllStringIntoCommaSeperatedString = new JoinAllStringIntoCommaSeperatedString();
+        joinAllStringIntoCommaSeperatedString.joinCommaSeperated();
+
+        CheckIfAllNumbersArePositive checkIfAllNumbersArePositive = new CheckIfAllNumbersArePositive();
+        checkIfAllNumbersArePositive.checkAllNumbersPositive();
+
+        AnyNumberIsDivisibleByThree anyNumberIsDivisibleByThree = new AnyNumberIsDivisibleByThree();
+        anyNumberIsDivisibleByThree.anyNumberDivisibleByThree();
+
+        FlatenListOfList flatenListOfList = new FlatenListOfList();
+        flatenListOfList.flattenList();
+
+        FindFirstNonEmptyElement findFirstNonEmptyElement = new FindFirstNonEmptyElement();
+        findFirstNonEmptyElement.findFirstNonEmpty();
+
+        FindSecondHighestNumber findSecondHighestNumber = new FindSecondHighestNumber();
+        findSecondHighestNumber.findSecondHighest();
 	}
 
 }
