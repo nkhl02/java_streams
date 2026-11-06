@@ -4,6 +4,10 @@ import com.java8.streamcoding.allmatch.CheckIfAllNumbersArePositive;
 import com.java8.streamcoding.anymatch.AnyNumberIsDivisibleByThree;
 import com.java8.streamcoding.distinct.FindAllTheDisctinctElements;
 import com.java8.streamcoding.flatmap.FlatenListOfList;
+import com.java8.streamcoding.groupingby.CountOccurenceOfEachElement;
+import com.java8.streamcoding.groupingby.GroupEmpByDeptAndCalculateAvgSalary;
+import com.java8.streamcoding.groupingby.GroupWordsByLength;
+import com.java8.streamcoding.partitioningby.SeperateEvenAndOdd;
 import com.java8.streamcoding.primitivemathoperations.FindAverageOfNumbers;
 import com.java8.streamcoding.reduce.FindMaxNumberReduce;
 import com.java8.streamcoding.reduce.ProductOfAllNumbers;
@@ -94,6 +98,24 @@ public class StreamcodingApplication {
 
         FindSecondHighestNumber findSecondHighestNumber = new FindSecondHighestNumber();
         findSecondHighestNumber.findSecondHighest();
-	}
+
+        SortEmployeeBySallary sortEmployeeBySallary = new SortEmployeeBySallary();
+        sortEmployeeBySallary.sortBySallary();
+
+        CalculateAverageAge calculateAverageAge = new CalculateAverageAge();
+        calculateAverageAge.calculateAverageAge();
+
+        SeperateEvenAndOdd seperateEvenAndOdd = new SeperateEvenAndOdd();
+        seperateEvenAndOdd.seperateOddAndEven();
+
+        GroupWordsByLength groupWordsByLength = new GroupWordsByLength();
+        groupWordsByLength.groupWordsByLength();
+
+        CountOccurenceOfEachElement countOccurenceOfEachElement = new CountOccurenceOfEachElement();
+        countOccurenceOfEachElement.getOccurenceOfEachElement();
+
+        GroupEmpByDeptAndCalculateAvgSalary groupEmpByDeptAndCalculateAvgSalary = new GroupEmpByDeptAndCalculateAvgSalary();
+        groupEmpByDeptAndCalculateAvgSalary.groupEmpByDeptAndCalAvgSalary();
+    }
 
 }
