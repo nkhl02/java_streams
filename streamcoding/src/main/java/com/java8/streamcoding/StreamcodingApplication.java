@@ -4,9 +4,7 @@ import com.java8.streamcoding.allmatch.CheckIfAllNumbersArePositive;
 import com.java8.streamcoding.anymatch.AnyNumberIsDivisibleByThree;
 import com.java8.streamcoding.distinct.FindAllTheDisctinctElements;
 import com.java8.streamcoding.flatmap.FlatenListOfList;
-import com.java8.streamcoding.groupingby.CountOccurenceOfEachElement;
-import com.java8.streamcoding.groupingby.GroupEmpByDeptAndCalculateAvgSalary;
-import com.java8.streamcoding.groupingby.GroupWordsByLength;
+import com.java8.streamcoding.groupingby.*;
 import com.java8.streamcoding.partitioningby.SeperateEvenAndOdd;
 import com.java8.streamcoding.primitivemathoperations.FindAverageOfNumbers;
 import com.java8.streamcoding.reduce.FindMaxNumberReduce;
@@ -116,6 +114,21 @@ public class StreamcodingApplication {
 
         GroupEmpByDeptAndCalculateAvgSalary groupEmpByDeptAndCalculateAvgSalary = new GroupEmpByDeptAndCalculateAvgSalary();
         groupEmpByDeptAndCalculateAvgSalary.groupEmpByDeptAndCalAvgSalary();
+
+        FindHighestPaidEmployeeInEachDept findHighestPaidEmployeeInEachDept = new FindHighestPaidEmployeeInEachDept();
+        findHighestPaidEmployeeInEachDept.findHighestPaidEmpInEachDept();
+
+        FindDeptMoreThanTwoEmployee findDeptMoreThanTwoEmployee = new FindDeptMoreThanTwoEmployee();
+        findDeptMoreThanTwoEmployee.findDeptMoreThanTwoEmp();
+
+        FindDeptWithHighestAvgSallary findDeptWithHighestAvgSallary = new FindDeptWithHighestAvgSallary();
+        findDeptWithHighestAvgSallary.findDeptWithHighestAvgSallary();
+
+        FindMostFrequentCharInString findMostFrequentCharInString = new FindMostFrequentCharInString();
+        findMostFrequentCharInString.findMostFrequentChar();
+
+        FirstNonRepeatingCharacterInString firstNonRepeatingCharacterInString = new FirstNonRepeatingCharacterInString();
+        firstNonRepeatingCharacterInString.findFirstNonRepeatingChar();
     }
 
 }
